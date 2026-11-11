@@ -1,0 +1,53 @@
+{
+  "name": "mcp-google-search-console",
+  "version": "1.0.0",
+  "description": "MCP server for Google Search Console (Search Analytics, URL Inspection, Sitemaps, Sites) using OAuth2",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-google-search-console": "dist/index.js",
+    "mcp-google-search-console-auth": "dist/auth-cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    ".env.example",
+    "mcp.json",
+    ".cursor-plugin",
+    "assets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristhianBuiza/mcp-google-search-console.git"
+  },
+  "homepage": "https://github.com/CristhianBuiza/mcp-google-search-console#readme",
+  "bugs": "https://github.com/CristhianBuiza/mcp-google-search-console/issues",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "google-search-console",
+    "seo"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "prepare": "tsc",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "auth": "node dist/auth-cli.js",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test dist/test/*.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "@types/node": "22.19.1",
+    "google-auth-library": "11.3.3",
+    "googleapis": "189.0.0",
+    "typescript": "5.9.3",
+    "zod": "4.6.7"
+  }
+}

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+*.token.json
+token.json
+client_secret*.json
+credentials.json
+.DS_Store
+
+# Local Cursor config may contain OAuth secrets
+.cursor/

@@ -1,0 +1,43 @@
+{
+  "name": "google-search-console",
+  "version": "1.0.0",
+  "description": "MCP server for Google Search Console: search analytics, URL inspection, sitemaps and site management via OAuth2.",
+  "author": {
+    "name": "Cristhian Buiza",
+    "email": "cbuiza@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/CristhianBuiza/mcp-google-search-console",
+  "repository": "https://github.com/CristhianBuiza/mcp-google-search-console",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "google-search-console",
+    "seo",
+    "search-analytics",
+    "sitemaps"
+  ],
+  "logo": "assets/logo.svg",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "GSC_CLIENT_ID": {
+        "type": "string",
+        "title": "Google OAuth Client ID",
+        "description": "OAuth 2.0 Desktop client ID from Google Cloud Console (Google Search Console API enabled)."
+      },
+      "GSC_CLIENT_SECRET": {
+        "type": "string",
+        "title": "Google OAuth Client Secret",
+        "description": "OAuth 2.0 Desktop client secret from Google Cloud Console."
+      },
+      "GSC_READONLY": {
+        "type": "string",
+        "title": "Read-only mode",
+        "description": "Set to \"true\" to hide write tools (add/delete site, submit/delete sitemap). Default: false.",
+        "default": "false",
+        "enum": ["false", "true"]
+      }
+    },
+    "required": ["GSC_CLIENT_ID", "GSC_CLIENT_SECRET"]
+  }
+}

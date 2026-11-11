@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Google Search Console MCP">
+  <rect width="128" height="128" rx="28" fill="#0F172A"/>
+  <circle cx="56" cy="56" r="28" fill="none" stroke="#38BDF8" stroke-width="10"/>
+  <path d="M76 76 L98 98" stroke="#FBBF24" stroke-width="10" stroke-linecap="round"/>
+  <path d="M44 56 h24 M56 44 v24" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+</svg>
